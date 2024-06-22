@@ -1,0 +1,29 @@
+@media (max-width: 525px){
+    .container{
+        scale: 0.8;
+    }
+    .input-section{
+        scale: 0.9;
+    }
+}
+
+@media (max-width: 455px){
+    .container{
+        scale: 0.7;
+    }
+}
+
+@media (max-width: 400px){
+    .container{
+        scale: 0.6;
+    }
+    #results{
+        display: none;
+    }
+}
+
+@media (max-width: 390px){
+    .container{
+        scale: 0.5;
+    }
+}

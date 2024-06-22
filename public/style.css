@@ -1,0 +1,227 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: #7F9F80;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #FFC374;font-family: "roboto";
+}
+
+.container{
+    width: 520px;
+    height: 600px;
+    background-color: #124076;
+    border: none;
+    border-radius: 60px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    position: relative;
+    transition: 1s;
+}
+
+.for-search{
+    height: 140px;
+}
+
+.input-section{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 140px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #124076;
+    z-index: 100;
+}
+
+#pin{
+    width: 50px;
+    margin-right: 10px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#pin:hover{
+    scale: 1.1;
+}
+
+.input-section input{
+    width: 300px;
+    height: 40px;
+    margin-right: 15px;
+    border: none;
+    outline: none;
+    background-color: #F9E897;
+    border-radius: 25px;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 20px;
+    transition: 0.5s;
+    font-family: 'Roboto';
+    font-weight: 600;
+    color: #124076;
+    cursor: pointer;
+}
+
+.input-section input:focus{
+    scale: 1.02;
+}
+
+.input-section button{
+    background-color: #12407600;
+    width: 50px;
+    height: 50px;
+    padding: 10px 10px;
+    border: 3px solid #FFC374;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+.input-section button:hover{
+    scale: 1.05;
+}
+
+.input-section button img{
+    width: 22px;
+}
+
+#content{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 460px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#results{
+    display: flex;
+    width: 100%;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: -40px;
+    opacity: 0;
+    scale: 0;
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+#weather-icon{
+    width: 180px;
+    margin-bottom: 30px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+
+#weather-icon:hover{
+    scale: 1.05;
+}
+
+#tmp{
+    color: #FFC374;
+    margin-bottom: 5px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#tmp:hover{
+    scale: 1.05;
+}
+
+.desc{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.desc img{
+    width: 60px;
+    margin-right: 10px;
+}
+
+#weather-desc{
+    margin-bottom: 45px;
+    transition: 0.5s;
+    cursor: pointer;
+}
+#weather-desc:hover{
+    scale: 1.05;
+}
+
+.wind{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.wind:hover{
+    scale: 1.05;
+}
+
+.humidity{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: 0.5s;
+    cursor: pointer;
+}
+.humidity:hover{
+    scale: 1.05;
+}
+
+#wind-per{
+    text-align: end;
+}
+
+.percent p{
+    font-weight: 500;
+}
+
+#not-found{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 420px;
+    opacity: 0;
+    scale: 0;
+    display: none;
+    animation: 0.5s fadeIn forwards;
+    animation-delay: 0.5s;
+}
+
+@keyframes fadeIn{
+    to{
+        scale: 1;
+        opacity: 1;
+    }
+}
+
+#not-found img{
+    width: 350px;
+    margin-top: -50px;
+}
+#not-found h2{
+    color: #F9E897;
+    font-family: "roboto";
+    font-weight: 600;
+    font-size: 30px;
+}
+

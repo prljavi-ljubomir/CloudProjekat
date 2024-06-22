@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="/images/logo.png">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/responsive.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Weather App with API | Maslesa Ljubomir</title>
+</head>
+<body>
+    
+    <div id="cont" class="container for-search">
+        <div class="input-section">
+            <label for="location">
+                <img id="pin" src="../images/placeholder.png" alt="pin-icon">
+            </label>
+            <input autocomplete="off" placeholder="Enter a location" id="location" type="text">
+            <button id="search-button">
+                <img src="../images/search.png" alt="search-icon">
+            </button>
+        </div>
+        <div id="content">
+            <div id="results">
+                <img src="../images/sunny.png" alt="" id="weather-icon">
+                <h1 id="tmp">23°C</h1>
+                <h1 id="weather-desc">Sunny</h1>
+                <div class="desc">
+                    <div class="humidity">
+                        <img src="../images/humidity.png" alt="">
+                        <div class="percent">
+                            <h2 id="hum-per">99%</h2>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="wind">
+                        <img src="../images/wind.png" alt="">
+                        <div class="percent">
+                            <h2 id="wind-per">99%</h2>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="not-found">
+                <h2>Oops! Invalid Location!</h2>
+                <img src="../images/no-address-found-4344458-3613886.webp" alt="">
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
